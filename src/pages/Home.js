@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Founder from "../components/founder";
 import HeaderSHowcase from "../components/header";
 import "./home.css";
 
@@ -18,7 +19,10 @@ function Home() {
           <p></p>
         </div>
       ) : (
-        <HeaderSHowcase />
+        <>
+          <HeaderSHowcase />
+          <Founder />
+        </>
       )}
     </>
   );

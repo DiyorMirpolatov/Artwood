@@ -1,6 +1,71 @@
-img {
-  width: 100px;
+header img {
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5px 0; */
+  gap: 0.1rem;
   height: 100px;
+}
+
+header p {
+  font-size: 1.25rem;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+}
+
+
+/* header.js */
+
+
+#headShow {
+  background-color: #52796f;
+}
+
+#headShow section {
+  height: calc(100vh - 100px);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#headShow section .container .text,
+.img {
+  width: 45%;
+}
+
+#headShow section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* gap: 2rem; */
+}
+
+#headShow section .container .text h1 {
+  color: #582f0e;
+  text-shadow: 1px 1px 0 #a68a64;
+  padding: 0 0 30px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#headShow section .container .text h3 {
+  color: #fff;
+  text-shadow: 2px 1px 0 #582f0e;
+  line-height: 1.7;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+#headShow section figure img {
+  border-radius: 50%;
 }
 
 .loading {
@@ -24,4 +89,97 @@ img {
   100% {
     transform: rotate(150deg);
   }
+}
+
+@media (max-width: 1250px) {
+  #headShow section .container .text h1 {
+    font-size: 1.75rem;
+  }
+
+  #headShow section figure img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #headShow section .container .text h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 1px 0 #582f0e;
+  }
+
+  #headShow section .container .text h3 {
+    font-size: 1rem;
+    text-align: left;
+    color: #582f0e;
+    text-shadow: 1px 1px 0 #a68a64;
+  }
+
+  #headShow section figure img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  #headShow section .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  #headShow section .container .text,
+  .img {
+    width: 95%;
+    text-align: center;
+  }
+
+  #headShow section .container .text h3 {
+    text-align: center;
+  }
+  #headShow section .container .text h1 {
+    text-align: center;
+    padding: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 580px) {
+  #headShow section .container {
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+
+  #headShow section .container .text,
+  .img {
+    width: 95%;
+    text-align: center;
+  }
+
+  #headShow section .container .text h3 {
+    text-align: center;
+  }
+  #headShow section .container .text h1 {
+    text-align: center;
+  }
+}
+
+
+/* Founder.js */
+
+
+#founder {
+  height: 90vh;
+}
+
+
+#founder .container .img figure img {
+  border-radius: 50%;
+}
+
+#founder .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Founder from "../components/founder";
 import HeaderSHowcase from "../components/header";
+import Mahsulotlar from "../components/mahsulotlar";
 import "./home.css";
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
         <>
           <HeaderSHowcase />
           <Founder />
+          <Mahsulotlar />
         </>
       )}
     </>
